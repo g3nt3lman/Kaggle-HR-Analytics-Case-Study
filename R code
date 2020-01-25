@@ -8,6 +8,46 @@ library(data.table)
 
 setwd("C:/Users/asus/Documents/R/other")
 d=read.csv("general_data.csv", header=T, na.strings = c("NA"), sep="," )
+
+boxplot(d$Age, main="Outliers check")
+hist(d$Age, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$DistanceFromHome, main="Outliers check")
+hist(d$DistanceFromHome, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$Education, main="Outliers check")
+hist(d$Education, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$JobLevel, main="Outliers check")
+hist(d$JobLevel, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$MonthlyIncome, main="Outliers check")
+hist(d$MonthlyIncome, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$NumCompaniesWorked, main="Outliers check")
+hist(d$NumCompaniesWorked, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$PercentSalaryHike, main="Outliers check")
+hist(d$PercentSalaryHike, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$TotalWorkingYears, main="Outliers check")
+hist(d$TotalWorkingYears, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$TrainingTimesLastYear, main="Outliers check")
+hist(d$TrainingTimesLastYear, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$Age, main="Outliers check")
+hist(d$Age, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$YearsAtCompany, main="Outliers check")
+hist(d$YearsAtCompany, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$YearsSinceLastPromotion, main="Outliers check")
+hist(d$YearsSinceLastPromotion, main="Outliers check", xlab=NA, ylab=NA)
+
+boxplot(d$YearsWithCurrManager, main="Outliers check")
+hist(d$YearsWithCurrManager, main="Outliers check", xlab=NA, ylab=NA)
+
 d_e=read.csv("employee_survey_data.csv", header=T, na.strings = c("NA"), sep="," )
 d_m=read.csv("manager_survey_data.csv", header=T, na.strings = c("NA"), sep="," )
 d_time_in=read.csv("in_time.csv", header=T, na.strings = c("NA"), sep="," )
